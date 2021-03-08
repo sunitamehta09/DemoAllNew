@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP60"
+            android:padding="@dimen/DP4"
+            android:layout_margin="@dimen/DP10"
+            android:orientation="horizontal"
+            android:background="@drawable/roundcornersbox">
+
+            <TextView
+                android:id="@+id/optionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:maxLines="3"
+                android:textSize="@dimen/SP12"
+                android:textStyle="bold"/>
+
+          </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

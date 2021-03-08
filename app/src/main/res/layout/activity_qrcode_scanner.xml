@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <ImageView
+            android:id="@+id/qrCodeImageScanner"
+            android:layout_width="@dimen/DP100"
+            android:layout_height="@dimen/DP100"
+            android:layout_marginBottom="@dimen/DP12"
+            android:layout_marginLeft="@dimen/DP12"
+            android:layout_marginStart="@dimen/DP12"
+            android:layout_gravity="center"
+            android:src="@drawable/qrcodeimage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click above image for Scan Code"
+            android:textSize="@dimen/DP18"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+    android:id="@+id/ln_invitefriendparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_13"
+    android:paddingRight="@dimen/margin_13"
+    android:paddingTop="@dimen/DP8">
+
+    <RelativeLayout
+        android:layout_width="@dimen/margin_60"
+        android:layout_height="@dimen/margin_60">
+
+        <ImageView
+            android:id="@+id/img_contactpersonimage"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60" />
+
+        <RelativeLayout
+            android:id="@+id/rl_userparent"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/circle"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/DP4"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/SP28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginStart="@dimen/margin_13"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_contactname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/SP18" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_contactnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DP10"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/SP14" />
+
+            </LinearLayout>
+
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_redishbg"
+                    android:paddingBottom="@dimen/DP5"
+                    android:paddingLeft="@dimen/DP20"
+                    android:paddingRight="@dimen/DP20"
+                    android:paddingTop="@dimen/DP5"
+                    android:text="@string/invite"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/SP15"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/img_sendicon"
+                    android:layout_width="@dimen/DP18"
+                    android:layout_height="@dimen/DP18"
+                    android:layout_gravity="center"
+                    android:src="@drawable/invite_send_icon"
+                    android:visibility="gone" />
+            </ViewSwitcher>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_13"
+            android:layout_marginStart="@dimen/margin_13"
+            android:layout_marginTop="@dimen/DP8"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

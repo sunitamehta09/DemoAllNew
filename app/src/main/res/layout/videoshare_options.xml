@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DP16"
+        android:paddingRight="@dimen/DP10"
+        android:paddingTop="@dimen/DP5"
+        android:paddingBottom= "@dimen/DP2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/share_playlist_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/DP10"
+                android:paddingBottom="@dimen/DP10">
+
+                <ImageView
+                    android:id="@+id/shareByWhatapp"
+                    android:layout_width="@dimen/DP32"
+                    android:layout_height="@dimen/DP32"
+                    android:layout_marginRight="@dimen/DP20"
+                    app:srcCompat="@drawable/ic_wa_share" />
+
+                <ImageView
+                    android:id="@+id/shareByFb"
+                    android:layout_width="@dimen/DP32"
+                    android:layout_height="@dimen/DP32"
+                    android:layout_marginRight="@dimen/DP20"
+                    app:srcCompat="@drawable/ic_fb_share" />
+
+                <ImageView
+                    android:id="@+id/shareByTwitter"
+                    android:layout_width="@dimen/DP32"
+                    android:layout_height="@dimen/DP32"
+                    android:layout_marginRight="@dimen/DP20"
+                    app:srcCompat="@drawable/ic_twitter_share" />
+
+                <ImageView
+                    android:id="@+id/shareByGMail"
+                    android:layout_width="@dimen/DP32"
+                    android:layout_height="@dimen/DP32"
+                    android:layout_marginRight="@dimen/DP20"
+                    app:srcCompat="@drawable/ic_gmail_share"/>
+
+                <ImageView
+                    android:id="@+id/shareOptions"
+                    android:layout_width="@dimen/DP32"
+                    android:layout_height="@dimen/DP32"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_share" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

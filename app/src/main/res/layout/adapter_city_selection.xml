@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/checkbox"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="0.03"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:theme="@style/MyCheckBox" />
+
+        <View
+            android:id="@+id/blueline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blue_gradient"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.self.demoaall">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="controllerAll.utilsAll.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="examplesAll.imagesExamples.cropImageCustomization.CropImageMainActivity"></activity>
+        <activity android:name="examplesAll.bandwidthall.activityAll.BandwidthActivity" />
+        <activity android:name="examplesAll.toroPlayerExamples.ToroPlayerMainActivity" />
+        <activity android:name="examplesAll.imagesExamples.cropImage.activityAll.CropperActivity" />
+        <activity android:name="examplesAll.imagesExamples.cropImage.activityAll.CropImageActivity" />
+        <activity android:name="examplesAll.imagesExamples.zoomImage.ZoomImageActivity" />
+        <activity android:name="examplesAll.imagesExamples.activityAll.CroppedImage" />
+        <activity android:name="examplesAll.imagesExamples.activityAll.RoundCornerImageView" />
+        <activity android:name="examplesAll.imagesExamples.circularImage.CircularImageViewActivity" />
+        <activity android:name="examplesAll.imagesExamples.aspectRatio.AspectRatioImageViewActivity" />
+        <activity android:name="examplesAll.imagesExamples.activityAll.ImagesExamplesOptions" />
+        <activity android:name="examplesAll.dialogExamples.activityAll.EditorJi.EditorJiMainActivity" /> <!-- DIALOG EXAMPLES -->
+        <activity android:name="examplesAll.dialogExamples.activityAll.Earshot.HomeActivity" />
+        <activity
+            android:name="examplesAll.dialogExamples.activityAll.Earshot.DialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" /> <!-- DRAWER EXAMPLES -->
+        <activity android:name="examplesAll.drawerExamples.CustomNavigation" />
+        <activity android:name="examplesAll.drawerExamples.AboutUs" /> <!-- CUSTOM CLASS EXAMPLES -->
+        <activity android:name="examplesAll.customClassExamples.videoShareOptionsExample.activityAll.VideoShareOptionsActivity" />
+        <activity android:name="examplesAll.customClassExamples.activityAll.CustomClassExamples" /> <!-- ADAPTER EXAMPLES -->
+        <activity android:name="examplesAll.adapterExamples.activityAll.SelectUnselectOptions" />
+        <activity android:name="examplesAll.adapterExamples.activityAll.ManageMultipleUI" />
+        <activity android:name="examplesAll.adapterExamples.activityAll.CitySelectionActivity" />
+        <activity android:name="examplesAll.adapterExamples.activityAll.PaginationExample" />
+        <activity android:name="examplesAll.adapterExamples.activityAll.AdapterExamples" /> <!-- SELECT UNSELECT EXAMPLES -->
+        <activity android:name="examplesAll.selectUnselectExamples.activitiesAll.SelectUnselectExamples" />
+        <activity android:name="examplesAll.selectUnselectExamples.activitiesAll.ButtonSelectUnselect" />
+        <activity android:name="examplesAll.selectUnselectExamples.activitiesAll.RadioGroupExample" /> <!-- VIEW PAGER EXAMPLES -->
+        <activity android:name="examplesAll.viewPagerExamples.horizontalViewPagerTrajilis.activitiesAll.HorizontalViewPagerExample" />
+        <activity android:name="examplesAll.viewPagerExamples.activitiesAll.ViewPagerExamples" /> <!-- GALLERY EXAMPLES -->
+        <activity android:name="examplesAll.galleryExamples.activityAll.PostImagesActivity" />
+        <activity android:name="examplesAll.galleryExamples.activityAll.CustomGallerySingleSelection" /> <!-- PERMISSION EXAMPLES -->
+        <activity android:name="examplesAll.permissionExamples.activityAll.PermissionsExamples" />
+        <activity android:name="examplesAll.permissionExamples.activityAll.FetchContacts" />
+        <activity android:name="examplesAll.drawerExamples.DrawerExamples" />
+        <activity android:name="examplesAll.intentExamples.IntentOptions" />
+        <activity android:name="examplesAll.intentExamples.ImplicitIntentOptions" />
+        <activity android:name="examplesAll.intentExamples.StartActivityForResult" />
+        <activity android:name="examplesAll.intentExamples.SecondActivity" />
+        <activity android:name="examplesAll.intentExamples.CentralizedWebView" />
+        <activity android:name="examplesAll.validationExamples.PasswordValidation" />
+        <activity android:name="examplesAll.validationExamples.LoginFormValidations" />
+        <activity android:name="examplesAll.validationExamples.ValidationsOptions" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="examplesAll.threadExamples.activityAll.ThreadExample" />
+        <activity android:name="examplesAll.threadExamples.activityAll.ThreadOptions" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.ForegroundServiceExample" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.IntentServiceExample" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.ShowCurrentDateBindingExample" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.GenerateRandomNumberBindingExample" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.PlaySong" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.ServiceLifeCycleExample" />
+        <activity android:name="examplesAll.servicesExamples.activityAll.ServiceOptions" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.SecondActivity" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.FirstActivity" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.OrderedBroadcastReceiverExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.LocalBroadCastManagerExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.InternetConnectorReceiverExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.CustomBroadcastReceiverExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.StaticBroadcastReceiverExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.DynamicBroadcastReceiverExample" />
+        <activity android:name="examplesAll.broadcastReceiversExamples.activityAll.BroadcastReceiversOptions" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.FragmentRetainingStateExample" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.FragmentRemovePopUpBackStack" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.FragmentAddRemoveReplace" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.DynamicFragmentExample" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.StaticFragmentExample" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.ActivityFragmentCommunication" />
+        <activity android:name="examplesAll.fragmentsExamples.activityAll.FragmentsOptions" />
+        <activity android:name="examplesAll.dialogExamples.activityAll.DialogFragmentOptions" /> <!-- QRCODE SCANNER EXAMPLES -->
+        <activity android:name="examplesAll.qrCodeScanner.DecoderActivity" />
+        <activity android:name="examplesAll.qrCodeScanner.QRCodeScanner" /> <!-- MEDIA PLAYER EXAMPLES -->
+        <activity android:name="examplesAll.mediaplayerExamples.PlaySongWithSeekBarAndDuration" />
+        <activity android:name="examplesAll.mediaplayerExamples.MediaPlayerExamples" /> <!-- GALLERY EXAMPLES -->
+        <activity android:name="examplesAll.galleryExamples.activityAll.GalleryExamples" />
+        <activity android:name="examplesAll.galleryExamples.activityAll.PhoneGallery" />
+        <activity android:name="examplesAll.galleryExamples.activityAll.CustomGalleryMultipleSelection" />
+        <activity android:name=".ShowOptions" />
+        <activity android:name="controllerAll.utilsAll.RunTimePermissionActivity" />
+
+        <receiver android:name="examplesAll.broadcastReceiversExamples.registersAll.PowerConnectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="examplesAll.servicesExamples.ServiceClasses.MyService" />
+        <service android:name="examplesAll.servicesExamples.ServiceClasses.PlaySongService" />
+        <service android:name="examplesAll.servicesExamples.ServiceClasses.MyBindingService" />
+        <service android:name="examplesAll.servicesExamples.ServiceClasses.ShowCurrentDateService" />
+        <service android:name="examplesAll.servicesExamples.ServiceClasses.MyIntentService" />
+        <service
+            android:name="examplesAll.servicesExamples.ServiceClasses.MyForegroundSevice"
+            android:foregroundServiceType="dataSync" />
+
+        <receiver android:name="examplesAll.broadcastReceiversExamples.registersAll.IncomingCall">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.self.demoaall.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP10"
+            android:layout_marginRight="@dimen/DP10"
+            android:background="@color/colorWhite"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchString"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:padding="@dimen/DP15"
+                android:singleLine="true"
+                android:textColor="@color/facebookbg_color"
+                android:textSize="@dimen/SP15"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/clearData"
+                android:layout_width="@dimen/DP45"
+                android:layout_height="@dimen/DP45"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/DP12"
+                app:srcCompat="@drawable/cross_gray_icon" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutSearch" />
+
+    </RelativeLayout>
+</layout>

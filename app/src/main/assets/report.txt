@@ -1,0 +1,25 @@
+{
+"data":
+{
+"secondary":
+[
+{"id":15,"showSecondary":true,"reportText":"False information"},
+{"id":23,"showSecondary":true,"reportText":"Hate speech or symbols"},
+{"id":22,"showSecondary":true,"reportText":"Violence or dangerous organizations"},
+{"id":21,"showSecondary":true,"reportText":"Bullying or harassment "},
+{"id":20,"showSecondary":true,"reportText":"Scam or fraud"},
+{"id":19,"showSecondary":true,"reportText":"Nudity or sexual activity"},
+{"id":18,"showSecondary":true,"reportText":"Sale of illegal or regulated goods"},
+{"id":17,"showSecondary":true,"reportText":"Intellectual property violation  "},
+{"id":16,"showSecondary":true,"reportText":"Suicide, self-injury or eating disorders"},
+{"id":11,"showSecondary":true,"reportText":"I just don't like it"}
+],
+"initial":
+[
+{"id":24,"showSecondary":true,"reportText":"It's inappropriate"},
+{"id":25,"showSecondary":false,"reportText":"It's spam"}
+]
+},
+"message":"success",
+"status":200
+}

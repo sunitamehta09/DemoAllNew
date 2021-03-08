@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/DP25">
+
+        <TextView
+            android:id="@+id/txtFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/click_button_select_unselect"
+            android:textColor="@color/colorDarkPink"
+            android:textSize="@dimen/SP25"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFavorite"
+            android:layout_margin="@dimen/DP25"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/DP10"
+            android:paddingBottom="@dimen/DP10"
+            app:srcCompat="@drawable/favorite_selector" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP2"
+            android:layout_below="@id/imgFavorite"
+            android:layout_marginBottom="@dimen/DP20"
+            android:background="@drawable/blue_gradient" />
+
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:lineSpacingExtra="@dimen/SP1"
+            android:gravity="center"
+            android:text="@string/set_the_duration_of_your_newslist"
+            android:textColor="@color/colorDarkPink"
+            android:textSize="@dimen/SP25"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDuration"
+            android:layout_marginTop="@dimen/SP36"
+            android:orientation="horizontal"
+            android:weightSum="0.9">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton5mint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@drawable/radio_selector" />
+
+                <TextView
+                    android:id="@+id/radio5mint_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiobutton5mint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/DP8"
+                    android:lineSpacingExtra="@dimen/DP4"
+                    android:text="@string/min5"
+                    android:textColor="@color/colorDarkPink"
+                    android:textSize="@dimen/SP14" />
+
+                <View
+                    android:id="@+id/view5min"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DP2"
+                    android:layout_below="@id/radio5mint_txt"
+                    android:layout_marginTop="@dimen/DP13"
+                    android:background="@color/colorGrey" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton10mint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@drawable/radio_selector" />
+
+                <TextView
+                    android:id="@+id/radio10mint_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiobutton10mint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/DP8"
+                    android:lineSpacingExtra="@dimen/DP4"
+                    android:text="@string/min10"
+                    android:textColor="@color/colorDarkPink"
+                    android:textSize="@dimen/SP14" />
+
+                <View
+                    android:id="@+id/view10min"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DP2"
+                    android:layout_below="@id/radio10mint_txt"
+                    android:layout_marginTop="@dimen/DP13"
+                    android:background="@drawable/blue_gradient" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton15mint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@drawable/radio_selector" />
+
+                <TextView
+                    android:id="@+id/radio15mint_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiobutton15mint"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/DP8"
+                    android:lineSpacingExtra="@dimen/DP4"
+                    android:text="@string/min15"
+                    android:textColor="@color/colorDarkPink"
+                    android:textSize="@dimen/SP14" />
+
+                <View
+                    android:id="@+id/view15min"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DP2"
+                    android:layout_below="@id/radio15mint_txt"
+                    android:layout_marginTop="@dimen/DP13"
+                    android:background="@color/colorGrey" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

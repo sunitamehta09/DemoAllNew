@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/custom_tool_bar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fetchcontacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/DP8"
+            android:layout_below="@id/layout_toolbar" />
+
+        <LinearLayout
+            android:id="@+id/ln_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_below="@id/layout_toolbar"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DP12"
+                android:gravity="center"
+                android:text="@string/please_wait"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+</layout>

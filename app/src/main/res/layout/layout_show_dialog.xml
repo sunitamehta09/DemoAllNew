@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/app_theme_color_black"
+        app:cardCornerRadius="@dimen/DP10">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DP30">
+
+            <RelativeLayout
+                android:id="@+id/rl_dialog_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_dialog_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/DP14"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:lineHeight="@dimen/DP23"
+                    android:text="@string/label_edit_playlist"
+                    android:textColor="@color/app_theme_color_yellow"
+                    android:textSize="@dimen/SP16"
+                    android:layout_toLeftOf="@id/img_cancel"/>
+
+                <ImageView
+                    android:id="@+id/img_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_cross_player"
+                    app:tint="@color/app_theme_color_yellow"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/DP20"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DP1"
+                android:layout_marginLeft="@dimen/DP16"
+                android:layout_marginRight="@dimen/DP16"
+                android:layout_below="@+id/rl_dialog_header"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/DP6"/>
+
+            <EditText
+                android:id="@+id/edtMsg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DP40"
+                android:hint="@string/hint_enter_name"
+                android:inputType="textPersonName|textCapWords|text"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/DP20"
+                android:paddingRight="@dimen/DP20"
+                android:textSize="@dimen/SP12"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rounded_greybox"
+                android:layout_below="@+id/divider"
+                android:layout_marginTop="@dimen/DP23"
+                android:layout_marginLeft="@dimen/DP15"
+                android:layout_marginRight="@dimen/DP15"/>
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DP39"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DP15"
+                android:paddingLeft="@dimen/DP35"
+                android:paddingRight="@dimen/DP35"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow_outline_roundbox"
+                android:textSize="@dimen/SP12"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/DP15"
+                android:layout_below="@+id/edtMsg" />
+
+            <TextView
+                android:id="@+id/txt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DP39"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="@dimen/DP6"
+                android:paddingLeft="@dimen/DP35"
+                android:paddingRight="@dimen/DP35"
+                android:text="@string/done"
+                android:textColor="@color/black"
+                android:background="@drawable/roundcorner_yellowbox"
+                android:textSize="@dimen/SP12"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/txt_cancel"
+                android:layout_marginTop="@dimen/DP15"
+                android:layout_marginRight="@dimen/DP15"
+                android:layout_below="@+id/edtMsg" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

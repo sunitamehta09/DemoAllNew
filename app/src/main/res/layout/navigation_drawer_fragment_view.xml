@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_theme_color_black"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/txtStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DP15"
+            android:background="@color/colorGrey"
+            android:padding="@dimen/DP15"
+            android:text="@string/student_fragment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DP25"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txtShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStudent"
+            android:layout_margin="@dimen/DP15"
+            android:background="@color/colorGrey"
+            android:padding="@dimen/DP15"
+            android:text="@string/show_fragment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DP25"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</layout>

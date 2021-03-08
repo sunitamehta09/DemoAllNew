@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DP8"
+                android:layout_marginRight="@dimen/DP8"
+                android:layout_marginTop="@dimen/DP10"
+                android:layout_marginBottom="@dimen/DP10"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:text="Get Message From A:"
+                android:textSize="@dimen/SP13"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/showMessageOfFragmentA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DP8"
+                android:layout_marginRight="@dimen/DP8"
+                android:layout_marginTop="@dimen/DP10"
+                android:layout_marginBottom="@dimen/DP10"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="@dimen/SP16"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DP8"
+                android:layout_marginRight="@dimen/DP8"
+                android:layout_marginTop="@dimen/DP10"
+                android:layout_marginBottom="@dimen/DP10"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:text="Get Message From B:"
+                android:textSize="@dimen/SP13"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/showMessageOfFragmentB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DP8"
+                android:layout_marginRight="@dimen/DP8"
+                android:layout_marginTop="@dimen/DP8"
+                android:layout_marginBottom="@dimen/DP8"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="@dimen/SP16"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/typeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:layout_marginTop="@dimen/DP6"
+            android:layout_marginBottom="@dimen/DP6"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:hint="Type Something..."
+            android:textSize="@dimen/SP15"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/clickBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click"
+            android:padding="@dimen/DP6"
+            android:layout_gravity="center"
+            android:background="@color/colorPink"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/DP15"
+            android:layout_marginRight="@dimen/DP15"
+            android:textSize="@dimen/SP16"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"/>
+    </LinearLayout>
+
+</layout>

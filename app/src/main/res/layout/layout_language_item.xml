@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvCategoryMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/DP8"
+        android:layout_marginBottom="@dimen/DP7"
+        card_view:cardCornerRadius="@dimen/DP10"
+        card_view:cardElevation="@dimen/DP0">
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP83">
+
+           <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/DP10"
+                android:text=""
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SP15" />
+
+            <ImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="@dimen/DP35"
+                android:layout_height="@dimen/DP35"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/DP10"
+                android:visibility="visible"
+                app:srcCompat="@drawable/tick_icon" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

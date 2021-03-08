@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/DP25"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNetworkType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorRed"
+            android:text="@string/type_of_network"/>
+
+        <TextView
+            android:id="@+id/txtNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/DP25"
+            android:layout_below="@id/txtNetworkType"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/txtBandwidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/txtNetwork"
+            android:layout_marginTop="@dimen/DP35"
+            android:text="@string/bandwidth_value"/>
+
+        <TextView
+            android:id="@+id/txtBandWidthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/DP25"
+            android:layout_below="@id/txtBandwidth"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/txtFindNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textStyle="italic"
+            android:textSize="@dimen/SP16"
+            android:padding="@dimen/DP25"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/DP25"
+            android:text="@string/find_network_info"/>
+
+        <TextView
+            android:id="@+id/txtSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/DP45"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/txtBandWidthValue"
+            android:text="@string/type_of_speed"/>
+
+        <TextView
+            android:id="@+id/txtSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/DP45"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/txtSpeed"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</layout>

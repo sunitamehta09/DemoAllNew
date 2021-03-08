@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e06a46</color>
+    <color name="colorPrimaryDark">#BD2A71</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorMagenta">#8a0f5c</color>
+    <color name="colorGrey">#A8A8A8</color>
+    <color name="colorLightGrey">#d7d7d7</color>
+    <color name="colorGreen">#008000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="grey7">#5c5c5c</color>
+    <color name="light_black">#191919</color>
+
+    <color name="colorLightViolet">#9968e3</color>
+    <color name="colorViolet">#7357ea</color>
+    <color name="colorOrange">#DA6943</color>
+    <color name="colorLightOrange">#e06a46</color>
+    <color name="colorDarkPink">#BD2A71</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--Filter Screen Color-->
+    <color name="seek_bar_color">#da5e51</color>
+    <color name="seekbar_unselected">#d7d7d7</color>
+    <color name="seek_bar_thumb_color">#d84d3b</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorOffWhite">#FFFAFA</color>
+    <color name="colorOffBlack">#808080</color>
+    <color name="colorLightBlack">#595959</color>
+    <color name="colorRed">#ff0000</color>
+
+    <color name="colorPink">#e6007a</color>
+    <color name="colorBlue">#0000FF</color>
+
+    <color name="toolbar_add_review">#ff7300</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+
+
+    <color name="googlebg_color">#dd3f36</color>
+    <color name="facebookbg_color">#3a589b</color>
+
+    <color name="app_theme_color_black">#21252d</color>
+    <color name="app_theme_color_yellow">#ffd400</color>
+    <color name="white">#ffffff</color>
+    <color name="black_50">#80000000</color>
+    <color name="black">#000000</color>
+
+</resources>

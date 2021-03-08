@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/DP150"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/DP0"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/DP13"
+            android:paddingBottom="@dimen/DP21">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorDarkPink"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DP15"
+                android:gravity="center_vertical"
+                android:text="@string/report"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SP16" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeader"
+                android:layout_marginLeft="@dimen/DP15"
+                android:layout_marginTop="@dimen/DP16"
+                android:layout_marginRight="@dimen/DP16">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/DP40"/>
+
+                    <TextView
+                        android:id="@+id/txtcancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DP30"
+                        android:layout_below="@+id/rvlist"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/txtOk"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/DP6"
+                        android:paddingLeft="@dimen/DP15"
+                        android:paddingRight="@dimen/DP15"
+                        android:text="@string/cancel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/SP14" />
+
+                    <TextView
+                        android:id="@+id/txtOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DP30"
+                        android:layout_below="@+id/rvlist"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/DP15"
+                        android:paddingRight="@dimen/DP15"
+                        android:text="@string/btn_ok"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/SP14" />
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

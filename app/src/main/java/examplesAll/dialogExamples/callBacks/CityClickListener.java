@@ -1,0 +1,5 @@
+package examplesAll.dialogExamples.callBacks;
+
+public interface CityClickListener {
+    void clickCity(String type, String id, String isCheck);
+}

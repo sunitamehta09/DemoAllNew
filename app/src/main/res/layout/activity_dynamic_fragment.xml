@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="start">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_theme_color_black">
+
+                <include
+                    android:id="@+id/layoutHeader"
+                    layout="@layout/layout_header" />
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layoutHeader">
+
+                <TextView
+                    android:id="@+id/txtStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorDarkPink"
+                    android:padding="@dimen/DP8"
+                    android:layout_centerInParent="true"
+                    android:text="@string/student_fragment"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/DP15"
+                    android:textSize="@dimen/DP25"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/txtShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtStudent"
+                    android:layout_margin="@dimen/DP15"
+                    android:background="@color/colorDarkPink"
+                    android:padding="@dimen/DP8"
+                    android:text="@string/show_fragment"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DP25"
+                    android:typeface="sans" />
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/leftDrawerMenu"
+                layout="@layout/navigation_drawer_fragment_view"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start" />
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

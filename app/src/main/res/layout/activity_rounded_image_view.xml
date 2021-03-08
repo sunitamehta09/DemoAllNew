@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDarkPink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP120"
+            android:layout_margin="@dimen/DP35"
+            android:orientation="horizontal">
+
+            <examplesAll.imagesExamples.circularImage.CircularImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="@dimen/DP120"
+                android:layout_height="@dimen/DP120"
+                android:src="@drawable/icon_profile_pic" />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="@dimen/DP13"
+                android:lineSpacingExtra="@dimen/DP7"
+                android:text="Circular Image View"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/SP20" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

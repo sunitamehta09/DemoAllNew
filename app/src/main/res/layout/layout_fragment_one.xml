@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightViolet"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:layout_marginTop="@dimen/DP8"
+            android:layout_marginBottom="@dimen/DP8"
+            android:gravity="center"
+            android:text="Get Message From Activity:"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/SP13"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/showMessageFromActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:layout_marginTop="@dimen/DP8"
+            android:layout_marginBottom="@dimen/DP8"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/SP16"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:layout_marginTop="@dimen/DP8"
+            android:layout_marginBottom="@dimen/DP8"
+            android:gravity="center"
+            android:text="Get Message From Frag B:"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/SP13"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/showMessageFromFragmentB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:layout_marginTop="@dimen/DP8"
+            android:layout_marginBottom="@dimen/DP8"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/SP16"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/typeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DP20"
+        android:layout_marginRight="@dimen/DP20"
+        android:hint="Type Something..."
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/SP16"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/clickBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/DP15"
+        android:layout_marginRight="@dimen/DP15"
+        android:layout_marginTop="@dimen/DP12"
+        android:background="@color/colorRed"
+        android:padding="@dimen/DP6"
+        android:text="Click"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/SP16" />
+    </LinearLayout>
+</layout>

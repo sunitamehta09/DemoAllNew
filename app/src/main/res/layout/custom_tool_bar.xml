@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/centralise_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:theme="@style/Theme.AppCompat">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DP55"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="@dimen/DP60"
+            android:layout_height="@dimen/DP60"
+            android:padding="@dimen/DP15"
+            app:srcCompat="@drawable/back_arrow_btn"/>
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="@dimen/DP20"
+            android:paddingRight="@dimen/DP20" />
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="@dimen/DP60"
+            android:layout_height="@dimen/DP60"
+            android:padding="@dimen/DP15"
+            android:src="@drawable/filtericon"
+            android:visibility="gone"
+            app:tint="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtOptions"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_margin="@dimen/DP15"
+            android:text="@string/done"
+            android:textSize="@dimen/DP20"/>
+
+
+    </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</layout>

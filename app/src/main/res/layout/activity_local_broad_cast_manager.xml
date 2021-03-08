@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/local_broadcast_manager_example"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/SP25"
+            android:padding="@dimen/DP10"
+            android:layout_margin="@dimen/DP30"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/DP15"
+            android:text="Show Message"
+            android:textColor="@color/colorRed"/>
+
+        <TextView
+            android:id="@+id/txtSendBroadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/DP15"
+            android:text="Send Broadcast"
+            android:layout_marginTop="@dimen/DP15"
+            android:background="@color/colorDarkPink"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</layout>

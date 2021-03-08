@@ -1,0 +1,46 @@
+{"data_states":
+[
+{
+    "value": " ",
+    "label": "All",
+    "code": "all",
+    "select": "0"
+  },
+{
+    "value": "5f3bb55b06166d6830f93c03",
+    "label": "Haryana",
+    "code": "hr",
+    "select": "0"
+     },
+  {
+    "value": "5f3bb56706166d6830f93c04",
+    "label": "Himachal",
+    "code": "hp",
+    "select": "1"
+    },
+   {
+     "value": "5f3bb56a06166d6830f93c05",
+     "label": "Madras",
+     "code": "md",
+    "select": "1"
+     },
+  {
+    "value": "5f3bb56c06166d6830f93c06",
+    "label": "Bengal",
+    "code": "be",
+    "select": "0"
+    },
+  {
+    "value": "5f50b86f855804fa41aefcfa",
+    "label": "Assam",
+    "code": "asm",
+    "select": "0"
+  },
+  {
+    "value": "5f50b89d855804fa41aefd0c",
+    "label": "Bihar",
+    "code": "bi",
+    "select": "0"
+   }
+  ]
+};

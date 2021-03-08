@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMain"
+        android:layout_width="@dimen/DP180"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DP35"
+        android:fitsSystemWindows="true"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="@dimen/DP12"
+        app:cardElevation="@dimen/DP0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgThumb"
+                    android:layout_width="@dimen/DP180"
+                    android:layout_height="@dimen/DP135"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/DP8"
+                    android:layout_marginTop="@dimen/DP8">
+
+                    <ImageView
+                        android:id="@+id/img_delete"
+                        android:layout_width="@dimen/DP12"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/delete_icon"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/colorDarkPink"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlImage"
+                android:layout_marginLeft="@dimen/DP10"
+                android:layout_marginTop="@dimen/DP14"
+                android:layout_marginRight="@dimen/DP5"
+                android:layout_marginBottom="@dimen/DP14">
+
+                <RelativeLayout
+                    android:id="@+id/rl_txtGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/txtGenre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DP18"
+                        android:text="Favourite"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/SP12"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/DP7"
+                        android:paddingRight="@dimen/DP7"
+                        android:background="@drawable/rounded_blackbox"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtLikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="25"
+                    android:textColor="@color/colorDarkPink"
+                    android:textSize="@dimen/SP12" />
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="@dimen/DP15"
+                    android:layout_height="@dimen/DP15"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/txtLikeCount"
+                    android:layout_margin="@dimen/DP3"
+                    app:srcCompat="@drawable/ic_favorite_selected"/>
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="@dimen/DP15"
+                    android:layout_height="@dimen/DP15"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/DP3"
+                    android:layout_marginRight="@dimen/DP15"
+                    android:layout_toLeftOf="@id/imgLike"
+                    app:srcCompat="@drawable/ic_share" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtPlaylistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutOptions"
+                android:layout_marginLeft="@dimen/DP11"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:text="Speed news bangla"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SP17" />
+
+            <TextView
+                android:id="@+id/txtPlaylistDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPlaylistName"
+                android:layout_margin="@dimen/DP11"
+                android:layout_marginTop="@dimen/DP8"
+                android:layout_marginBottom="@dimen/DP12"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Lorem ipsum dolor sit amet nuino…."
+                android:textColor="@color/white"
+                android:textSize="@dimen/SP14" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

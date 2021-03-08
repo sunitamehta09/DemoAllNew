@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMain"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/DP15"
+        app:cardElevation="@dimen/DP2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/DP20"
+            android:paddingBottom="@dimen/DP14">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/DP5"
+                    android:text="@string/choose_a_language"
+                    android:layout_marginLeft="@dimen/DP18"
+                    android:layout_marginRight="@dimen/DP18"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SP15" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DP22"
+                    android:layout_marginLeft="@dimen/DP18"
+                    android:layout_marginRight="@dimen/DP7"
+                    android:layout_marginBottom="@dimen/DP17"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DP38"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/DP10"
+                    android:background="@drawable/roundcorner_yellowbox"
+                    android:backgroundTint="@color/app_theme_color_yellow"
+                    android:paddingLeft="@dimen/DP47"
+                    android:paddingRight="@dimen/DP47">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="@dimen/DP5"
+                            android:text="@string/done"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/SP15" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

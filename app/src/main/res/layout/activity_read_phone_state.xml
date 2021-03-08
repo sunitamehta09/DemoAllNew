@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/read_phone_state_broadcast_receiver_example"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/SP25"
+            android:padding="@dimen/DP10"
+            android:layout_margin="@dimen/DP30"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/broadcast_receiver_for_phone_state"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/SP16"
+            android:padding="@dimen/DP10"
+            android:layout_margin="@dimen/DP30"
+            android:textStyle="bold"
+            android:background="@drawable/roundcorner_boxgrey"/>
+
+    </RelativeLayout>
+
+</layout>
